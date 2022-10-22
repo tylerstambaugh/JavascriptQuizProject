@@ -3,6 +3,8 @@
         <title>Learning Javascript</title>
     </head>
     <body>
+
+        <h1>Javascript Scratchpad</h1>
         <script>
         //alert('Helloe world');
 
@@ -24,7 +26,23 @@
 
         var moreCars = ['BMW', 'Mercedes', 'Lexus'];
 
-        alert(cars[0]);
+        //alert(cars[0]);
+
+        for(var i = 0; i < moreCars.length; i++) {
+            console.log(moreCars[i]);
+        }
+        
+        function someFunctionWithParameter(theParameter) {
+            console.log('this was output by a function wit the param: ' + theParameter);
+        }
+
+        someFunctionWithParameter('this was the parameter passed into the function');
+        
+        function addIt(num1, num2){
+            console.log(num1 + num2);
+        }
+
+        addIt(8, 34);
 
         </script>
 
